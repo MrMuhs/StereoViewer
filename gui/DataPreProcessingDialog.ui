@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Copyright (C) 2009 Pascal Mues</author>
+ <class>DataPreProcessingDialog</class>
+ <widget class="QDialog" name="DataPreProcessingDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>235</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bildvorverarbeitung</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Operationen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="7">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item row="0" column="3" colspan="4">
+    <widget class="QComboBox" name="uicboNewOperation">
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="2">
+    <widget class="QPushButton" name="uibtnAdd">
+     <property name="text">
+      <string>Hinzufügen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3" colspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="5" colspan="2">
+    <widget class="QPushButton" name="uibtnRemove">
+     <property name="text">
+      <string>Löschen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPushButton" name="uibtnMoveDown">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../StereoViewerRessourcen.qrc">
+       <normaloff>:/Runter32.png</normaloff>
+       <normalon>:/Runter32.png</normalon>:/Runter32.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="uibtnMoveUp">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../StereoViewerRessourcen.qrc">
+       <normaloff>:/Hoch32.png</normaloff>
+       <normalon>:/Hoch32.png</normalon>:/Hoch32.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2" colspan="5">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="uibtnOkay">
+       <property name="text">
+        <string>Okay</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="uibtnCancel">
+       <property name="text">
+        <string>Abbrechen</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../StereoViewerRessourcen.qrc"/>
+ </resources>
+ <connections/>
+</ui>
